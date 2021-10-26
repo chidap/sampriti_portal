@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CoreRoutingModule } from './core-routing.module';
+import { UserService } from './user.service';
 
 
 @NgModule({
@@ -9,6 +10,9 @@ import { CoreRoutingModule } from './core-routing.module';
   imports: [
     CommonModule,
     CoreRoutingModule
-  ]
+  ],
+  providers: [
+    UserService
+  ],
 })
 export class CoreModule { }
